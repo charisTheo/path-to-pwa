@@ -13,7 +13,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js', {scope: '/stage-3-offline/'}).then(function (response) {
+        navigator.serviceWorker.register('./sw.js', {scope: '/path-to-pwa/'}).then(function (response) {
           console.log('Service Worker registered.');
         }).catch(function (error) {
           console.error(error);
