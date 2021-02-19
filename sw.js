@@ -26,7 +26,7 @@ self.addEventListener('activate', (event) => {
 /*                                    Stage 3 - Offline                                      */
 /* ----------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
-const OFFLINE_HTML = '/offline/offline.html';
+const OFFLINE_HTML = './offline/offline.html';
 const PRECACHE = [
   { url: OFFLINE_HTML, revision: '70f044fda3e9647a98f084763ae2c32a' }
 ];
