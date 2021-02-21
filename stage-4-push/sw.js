@@ -114,8 +114,8 @@ self.addEventListener('push', function(event) {
   const title = 'Path to PWA';
   const options = {
     body: event.data.text(),
-    icon: 'images/icon.png',
-    badge: 'images/badge.png'
+    icon: 'app_icons/maskable_icon.png',
+    badge: 'app_icons/favicon-32x32.png'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));

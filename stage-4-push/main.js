@@ -19,8 +19,7 @@
 
 'use strict';
 
-//const applicationServerPublicKey = 'YOUR PUBLIC API KEY HERE https://web-push-codelab.glitch.me/';
-const applicationServerPublicKey = 'BMv3NMG1qY7QB3mxHkdquoXalMOaSRVZHn2jRsBu2UcyI7Nn383etw1XjqyB6bV3gTTAFPhp5Guiu3IL2Q4TMxI';
+const applicationServerPublicKey = 'YOUR PUBLIC API KEY HERE https://web-push-codelab.glitch.me/';
 
 let isSubscribed = false;
 let swRegistration = null;
