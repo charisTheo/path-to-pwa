@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
 
   <!-- SW CODE START -->
-  <link rel="manifest" href="./site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ffcc4d">
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js').then(function (response) {
+        navigator.serviceWorker.register('/sw.js').then(function (response) {
           console.log('Service Worker registered.');
         }).catch(function (error) {
           console.error(error);
@@ -24,9 +24,9 @@
   <!-- SW CODE END -->
 
   <!-- (optional) iOS ICONS START -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./app_icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./app_icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./app_icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/app_icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/app_icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/app_icons/favicon-16x16.png">
   <!-- (optional) iOS ICONS END -->
 
 </head>

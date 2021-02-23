@@ -20,6 +20,13 @@ The code resources are split in three stages that are meant to be followed in or
 
 [Demo of final PWA (stage 3)](https://charistheo.github.io/path-to-pwa/)
 
+4. Stage 4 - Push notifications
+
+    > Add a basic **push notification** to the PWA. 
+    > This step cannot be served as part of the demo,
+    > as it requires a public API key from a push server
+    > such as [this one](https://web-push-codelab.glitch.me/).
+
 ## Run (optional)
 
 1. Clone this repository
