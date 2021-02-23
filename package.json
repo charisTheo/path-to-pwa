@@ -10,6 +10,7 @@
     "stage:1": "npx live-server ./stage-1-installable",
     "stage:2": "npx live-server ./stage-2-cached",
     "stage:3": "npx live-server ./stage-3-offline",
+    "stage:4": "npx live-server ./stage-4-push",
     "deploy": "gh-pages --dist docs/ --branch gh-pages"
   },
   "repository": {

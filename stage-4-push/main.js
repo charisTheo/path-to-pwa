@@ -22,12 +22,11 @@
 const applicationServerPublicKey = 'YOUR PUBLIC API KEY HERE https://web-push-codelab.glitch.me/';
 
 let isSubscribed = false;
-let swRegistration = null;
 
 function urlB64ToUint8Array(base64String) {
   const padding = '='.repeat((4 - base64String.length % 4) % 4);
   const base64 = (base64String + padding)
-    .replace(/\-/g, '+')
+    .replace(/-/g, '+')
     .replace(/_/g, '/');
 
   const rawData = window.atob(base64);
@@ -45,14 +44,18 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   navigator.serviceWorker.register('sw.js')
   .then(function(swReg) {
     console.log('👷 registered', swReg);
+    if (!isSubscribed) {
+      console.log('👷 subscribing user to push...');
+      subscribeUser(); 
     subscribeUser(); 
+      subscribeUser(); 
+    }
   })
   .catch(function(error) {
     console.error('👷 Error', error);
   });
 } else {
   console.warn('Push messaging is not supported');
-  pushButton.textContent = 'Push Not Supported';
 }
 
 function subscribeUser() {
