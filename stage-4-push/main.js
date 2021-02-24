@@ -47,8 +47,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     if (!isSubscribed) {
       console.log('👷 subscribing user to push...');
       subscribeUser(); 
-    subscribeUser(); 
-      subscribeUser(); 
     }
   })
   .catch(function(error) {
